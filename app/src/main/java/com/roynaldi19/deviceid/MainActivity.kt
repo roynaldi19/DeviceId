@@ -2,7 +2,7 @@ package com.roynaldi19.deviceid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
+import io.vrinda.kotlinpermissions.DeviceInfo
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getDeviceId() {
-        val deviceId = Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
+        val deviceId = DeviceInfo.getAndroidID(this)
         textId.text = deviceId
     }
 }
