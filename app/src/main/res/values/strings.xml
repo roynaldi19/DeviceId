@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DeviceId</string>
+    <string name="you_device_id_is">Your Device ID Is :</string>
+</resources>
