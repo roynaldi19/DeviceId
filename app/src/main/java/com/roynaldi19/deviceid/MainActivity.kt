@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getDeviceId() {
-        val deviceId = DeviceInfo.getAndroidID(this)
+        val deviceId = DeviceInfo.getBuildID()
         textId.text = deviceId
     }
 }
